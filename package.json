@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "zux-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Andrea Zorzi's website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Andrea Zorzi <zux.andrea@hotmail.com>",
   "dependencies": {
     "gatsby": "^2.15.35",
     "gatsby-image": "^2.2.27",
@@ -37,9 +37,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/azuxx/zux-site"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/azuxx/zux-site/issues"
   }
 }

@@ -8,7 +8,7 @@ import "./index.scss"
 const IndexPage = () => (
   <Layout>
     <SEO title="Andrea Zorzi"/>
-    <div className="main">
+    <div className="wip">
       <p>...</p>
     </div>
   </Layout>

@@ -23,12 +23,6 @@ html, body, #___gatsby {
   height: 100%;
 }
 
-#___gatsby {
-  & > div {
-    height: calc(100vh - #{$header-height});
-  }
-}
-
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -50,29 +44,17 @@ a {
   transition: all .2s ease;
 }
 
-.app-wrapper {
-  height: 100%;
-  position: relative;
-
-  main {
-    height: calc(100% - (#{$header-height} * 1.5));
-    width: 100%;
+#___gatsby {
+  & > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "header"
+            "main"
+            "footer";
   }
 }
 
-.footer {
-  height: calc(#{$header-height} * 1.5); // just to have a reference
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 16px 32px;
-  background-color: $light-grey-color;
-
-  display: flex;
-  align-items: flex-start;
-
-  @media (max-width: 640px) {
-    flex-direction: column;
-    height: auto;
-  }
+main{
+  grid-area: main;
 }

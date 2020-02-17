@@ -1,6 +1,9 @@
+@import '../../styles/settings';
+
 .footer {
   grid-area: footer;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: $footer-height;
 }

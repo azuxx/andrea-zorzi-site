@@ -57,4 +57,5 @@ a {
 
 main{
   grid-area: main;
+  height: calc(100vh - #{$header-height} - #{$footer-height});
 }

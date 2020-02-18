@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Andrea Zorzi`,
+    title: `Who am I`,
     description: `Sort of my website`,
     author: `@azuxx`,
   },
@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Andrea Zorzi`,
+        short_name: `Zux`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#0299DA`,
+        theme_color: `#0299DA`,
         display: `minimal-ui`,
-        icon: `src/images/zux-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favico.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`

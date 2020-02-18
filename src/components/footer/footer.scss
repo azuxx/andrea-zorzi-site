@@ -1,9 +1,19 @@
 @import '../../styles/settings';
 
 .footer {
-  grid-area: footer;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: transparent;
+  //grid-area: footer;
   display: flex;
   justify-content: center;
   align-items: center;
   height: $footer-height;
+  background: radial-gradient(circle, rgba(170,170,170,1) 0%, rgba(255,255,255,0) 28%);
+  .copyright a{
+    font-weight: bold;
+  }
 }

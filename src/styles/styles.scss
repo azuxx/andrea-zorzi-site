@@ -48,14 +48,17 @@ a {
   & > div {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas:
-            "header"
-            "main"
-            "footer";
+    grid-template-areas: "main"
+    //grid-template-areas:
+    //        "header"
+    //        "main"
+    //        "footer";
   }
 }
 
 main{
   grid-area: main;
-  height: calc(100vh - #{$header-height} - #{$footer-height});
+  //height: calc(100vh - #{$header-height} - #{$footer-height});
+  height: 100vh;
+  max-width: 100vw;
 }

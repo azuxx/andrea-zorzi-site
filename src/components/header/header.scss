@@ -1,7 +1,9 @@
 @import '../../styles/settings';
 
 .header{
-  grid-area: header;
+  position: fixed;
+  width: 100%;
+  //grid-area: header;
   height: $header-height;
   display: flex;
   align-items: center;

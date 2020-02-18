@@ -8,6 +8,7 @@ const Header = ({ siteTitle }) => (
     {/*<h1>*/}
     {/*  <Link to="/">{siteTitle}</Link>*/}
     {/*</h1>*/}
+    <div className="header__trigger-magic">...</div>
   </header>
 )
 

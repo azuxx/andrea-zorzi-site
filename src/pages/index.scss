@@ -6,6 +6,44 @@
 //}
 .fade-container {
   margin: auto;
+  position: relative;
+  &__circle{
+    opacity: 0;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 25%;
+    left: 50%;
+    z-index: 10;
+    background: radial-gradient(circle, rgba(200,200,200,1) 0%, rgba(200,200,200,0) 100%);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(200, 200, 200, 0.12), 0 6px 12px rgba(200, 200, 200, 0.32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1024px) {
+      top: 35%;
+      width: 200px;
+      height: 200px;
+    }
+    a{
+      &:first-child{
+        margin-bottom: 24px;
+        @media (max-width: 1024px) {
+          margin-bottom: 16px;
+        }
+      }
+      &:hover{
+        font-weight: 500;
+      }
+    }
+    &:hover{
+      opacity: 1;
+      transition: opacity 250ms ease-in;
+    }
+  }
   &__each-fade {
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,5 +51,13 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    @media (max-width: 1024px) {
+      background-position-x: 46%;
+    }
+    &--me-walking{
+      @media (max-width: 1024px) {
+        background-position-x: 58%;
+      }
+    }
   }
 }

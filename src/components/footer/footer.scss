@@ -12,13 +12,9 @@
   justify-content: center;
   align-items: center;
   height: $footer-height;
+  background: linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(255,255,255,0) 75%);
   .copyright{
-    width: 250px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(circle, rgba(170,170,170,1) 0%, rgba(255,255,255,0) 50%);
+    margin-top: 50px;
     a {
       font-weight: bold;
     }

@@ -32,10 +32,14 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Andrea Zorzi"/>
     <div className="fade-container">
+      <div className="fade-container__circle">
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/andrea-zorzi-07703262">LinkedIn</a>
+        <a rel="noopener noreferrer" target="_blank" href="https://github.com/azuxx">GitHub</a>
+      </div>
       <Fade {...fadeProperties}>
         {
           fadeImages.map((each, index) =>
-            <div className="fade-container__each-fade" key={index.toString()} style={{ backgroundImage: `url(${each})` }}>
+            <div className={`fade-container__each-fade ${index === 1 ? 'fade-container__each-fade--me-walking' : ''}`} key={index.toString()} style={{ backgroundImage: `url(${each})` }}>
 
             </div>
           )

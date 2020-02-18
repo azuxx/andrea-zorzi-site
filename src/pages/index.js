@@ -22,10 +22,10 @@ const fadeProperties = {
   transitionDuration: 500,
   infinite: true,
   indicators: false,
-  arrows: false,
-  onChange: (oldIndex, newIndex) => {
-    console.log(`fade transition from ${oldIndex} to ${newIndex}`);
-  }
+  arrows: false
+  // onChange: (oldIndex, newIndex) => {
+  //   console.log(`fade transition from ${oldIndex} to ${newIndex}`);
+  // }
 }
 
 const IndexPage = () => (

@@ -6,9 +6,9 @@ import { Fade } from 'react-slideshow-image';
 
 import "./index.scss"
 
-import img1 from '../images/home_1.jpg';
-import img2 from '../images/home_2.jpg';
-import img3 from '../images/home_3.jpg';
+import img1 from '../images/home1.jpg';
+import img2 from '../images/home2.jpg';
+import img3 from '../images/home3.jpg';
 
 
 const fadeImages = [

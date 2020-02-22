@@ -61,4 +61,22 @@ main{
   //height: calc(100vh - #{$header-height} - #{$footer-height});
   height: 100vh;
   max-width: 100vw;
+  &[showmenu="true"]{
+    .fade-container__circle{
+      opacity: 1;
+      transition: opacity 250ms ease-in;
+      a{
+        pointer-events: all;
+      }
+    }
+  }
+  &[showmenu="false"]{
+    .fade-container__circle:hover{
+      opacity: 1;
+      transition: opacity 250ms ease-in;
+      a{
+        pointer-events: all;
+      }
+    }
+  }
 }

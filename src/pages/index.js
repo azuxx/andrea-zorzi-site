@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Component} from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -28,26 +28,57 @@ const fadeProperties = {
   // }
 }
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Andrea Zorzi"/>
-    <div className="fade-container">
-      <div className="fade-container__circle">
-        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/andrea-zorzi-07703262">LinkedIn</a>
-        <a rel="noopener noreferrer" target="_blank" href="https://github.com/azuxx">GitHub</a>
-      </div>
-      <Fade {...fadeProperties}>
-        {
-          fadeImages.map((each, index) =>
-            <div className={`fade-container__each-fade ${index === 1 ? 'fade-container__each-fade--me-walking' : ''}`} key={index.toString()} style={{ backgroundImage: `url(${each})` }}>
+// const IndexPage = () => (
+//   <Layout>
+//     <SEO title="Andrea Zorzi"/>
+//     <div className="fade-container">
+//       <div className="fade-container__circle">
+//         <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/andrea-zorzi-07703262">LinkedIn</a>
+//         <a rel="noopener noreferrer" target="_blank" href="https://github.com/azuxx">GitHub</a>
+//       </div>
+//       <Fade {...fadeProperties}>
+//         {
+//           fadeImages.map((each, index) =>
+//             <div className={`fade-container__each-fade ${index === 1 ? 'fade-container__each-fade--me-walking' : ''}`} key={index.toString()} style={{ backgroundImage: `url(${each})` }}>
+//
+//             </div>
+//           )
+//         }
+//       </Fade>
+//     </div>
+//   </Layout>
+// )
 
-            </div>
-          )
-        }
-      </Fade>
-    </div>
-  </Layout>
-)
+class IndexPage extends Component {
+  constructor(props) {
+    super(props);
+  }
 
-export default IndexPage
+  componentDidMount() {
+  }
 
+  render() {
+    return (
+      <Layout>
+        <SEO title="Andrea Zorzi"/>
+        <div className="fade-container">
+          <div className='fade-container__circle'>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/andrea-zorzi-07703262">LinkedIn</a>
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/azuxx">GitHub</a>
+          </div>
+          <Fade {...fadeProperties}>
+            {
+              fadeImages.map((each, index) =>
+                <div className={`fade-container__each-fade ${index === 1 ? 'fade-container__each-fade--me-walking' : ''}`} key={index.toString()} style={{ backgroundImage: `url(${each})` }}>
+
+                </div>
+              )
+            }
+          </Fade>
+        </div>
+      </Layout>
+    );
+  }
+}
+
+export default IndexPage;

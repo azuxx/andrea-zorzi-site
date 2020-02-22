@@ -29,6 +29,7 @@
       height: 200px;
     }
     a{
+      pointer-events: none;
       &:first-child{
         margin-bottom: 24px;
         @media (max-width: 1024px) {
@@ -39,9 +40,13 @@
         font-weight: 500;
       }
     }
-    &:hover{
+    //wanted to let it work in this way tho :(
+    .show{
       opacity: 1;
       transition: opacity 250ms ease-in;
+      a{
+        pointer-events: all;
+      }
     }
   }
   &__each-fade {

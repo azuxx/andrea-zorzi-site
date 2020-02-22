@@ -3,21 +3,21 @@ import React from "react"
 
 import "./header.scss"
 
-const Header = ({ siteTitle }) => (
+const Header = (props) => (
   <header className="header">
     {/*<h1>*/}
     {/*  <Link to="/">{siteTitle}</Link>*/}
     {/*</h1>*/}
-    <div className="header__trigger-magic">...</div>
+    <div className="header__trigger-magic" onClick={props.onClick}>...</div>
   </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+// Header.propTypes = {
+//   siteTitle: PropTypes.string,
+// }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+// Header.defaultProps = {
+//   siteTitle: ``,
+// }
 
 export default Header

@@ -4,11 +4,11 @@ import React from "react"
 import "./header.scss"
 
 const Header = (props) => (
-  <header className="header">
+  <header className={`header ${props.menuToggled ? 'header--menu-opened' : ''}`}>
     {/*<h1>*/}
     {/*  <Link to="/">{siteTitle}</Link>*/}
     {/*</h1>*/}
-    <div className="header__trigger-magic" onClick={props.onClick}>...</div>
+    <div className="header__trigger-magic" onClick={props.onClick}> </div>
   </header>
 )
 

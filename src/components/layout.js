@@ -40,7 +40,7 @@ class Layout extends Component {
     const children = this.props.children;
     return (
       <>
-        <Header onClick={() => this.handleClick()}/>
+        <Header menuToggled={this.state.isMenuToggle} onClick={() => this.handleClick()}/>
         <main showmenu={this.state.isMenuToggle.toString()}>{children}</main>
         <Footer/>
       </>

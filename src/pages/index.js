@@ -3,6 +3,7 @@ import React, {Component} from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Fade } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 
 import "./index.scss"
 
